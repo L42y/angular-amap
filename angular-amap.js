@@ -30,6 +30,7 @@ angular.module('l42y.amap', [
       }($window.document, 'script'));
 
       var service = {
+        config: this.config,
         promise: deferred.promise
       };
 

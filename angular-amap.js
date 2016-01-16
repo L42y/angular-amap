@@ -8,7 +8,7 @@ angular.module('l42y.amap', [
       key: null,
       version: '1.3'
     },
-    $get: function (
+    $get: ['$q','$window','$location',function (
       $q,
       $window,
       $location
@@ -34,7 +34,7 @@ angular.module('l42y.amap', [
       };
 
       return service;
-    }
+    }]
   };
 
   return provider;
